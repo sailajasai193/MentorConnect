@@ -1,0 +1,64 @@
+.footer {
+  padding: 0px;
+  background-color: rgb(194, 228, 255);
+  text-align: center;
+ height: 160px;
+}
+.head {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.carousel-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  background-color: none;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 5px;
+  scrollbar-width: none; 
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.iconsdesign {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  width: 200px;
+  height:100px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding:  3px 30px;
+  text-align: center;
+}
+.iconsdesign:hover {
+  transform: scale(1.05);
+  background-color: #f0f8ff; 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.matter{
+    font-size: 10px;
+    font-weight: bold;
+    padding-top:15px;
+}
+.i {
+  font-size: 2rem;
+  color:navy;
+  text-align: center;
+  margin-top:10px;
+  margin-bottom: 5px;
+}
+.queries{
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 10px;
+}
+.contact{
+   font-size: 10px; 
+}

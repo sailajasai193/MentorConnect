@@ -1,0 +1,166 @@
+/* entry.css */
+.heading {
+  height: 30px;
+  width: 100vw;
+  background: navy;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;     
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.logo{
+  height: 20px;
+  width:20px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-right:5px;
+}
+.Aboutus {
+    cursor: pointer;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.Aboutus:hover {
+    color: #007bff; 
+  
+}
+
+p{
+  margin: 0px !important;
+  padding: 0px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-left {
+  display: flex;
+  margin-left: 30px;
+  font-size: 10px;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+  font-size: 10px;
+  margin-right: 30px;
+}
+.heading p {
+  margin: 0;          
+}
+.btn {
+  all: unset;
+  font-size: 10px !important;
+  padding: 2px 6px !important;
+   background-color: rgb(0, 0, 0) !important;
+  color: white !important;
+  border-radius: 1px;
+  height:15px;
+  margin:auto;
+  text-align: center; 
+  border: none;
+   transition: all 0.3s ease; 
+}
+
+.btn:hover {
+  background-color: rgb(30, 30, 30) !important;
+  transform: scale(1.05);
+}
+.login-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.login-box {
+  background-color: white;
+  padding: 5px;
+  font-size: 8px;
+  border-radius: 8px;
+  width: 230px;
+  text-align: center;
+  position: relative;
+}
+
+.login-box input {
+  width: 90%;
+  margin: 5px 0;
+  padding: 5px;
+  height: 20px;
+}
+
+.login-submit {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.login-submit:hover {
+  background-color: #000080cc; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.login-close {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 2px 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.login-close:hover {
+  background: darkred;
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.para{
+  text-align: left;
+  margin-left: 12px !important;
+  padding: 0px !important;
+  margin-top:0px !important;
+ font-weight: bold;
+}
+.loginbtn{
+  height: 20px;
+  width:90%;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
+}
+.loginbtn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+hr{
+  margin:5px !important;
+}
+.already{
+   text-align: left;
+   margin-left: 12px !important;
+}

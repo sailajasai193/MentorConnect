@@ -1,0 +1,114 @@
+.outline {
+  display: flex;
+  background-color: #f9f9f9;
+  padding:5px;
+  border-radius: 10px;
+  gap:20px; 
+  width:75vw;
+  margin:auto;
+  margin-bottom:10px !important;
+  margin-top:10px !important;
+   height: 150px;
+   font-size: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; 
+}
+
+.outline:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  border: 0.5px solid black;
+}
+
+
+.imag {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px; 
+}
+
+
+.linkedin-icon {
+  font-size: 15px;
+  color: #0a66c2;
+  margin-top: 10px;
+  margin-left:8px;
+}
+
+.linkedin-icon:hover {
+  color: #004182;
+  transform: scale(1.1);
+}
+.mentorbtn {
+  height: 25px;
+  width: 90px;
+  border-radius:3px;
+  border: none;
+  background-color: #4CAF50; 
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: auto;
+}
+
+.mentorbtn:hover {
+  background-color: #45a049; 
+  transform: scale(1.05);   
+}
+
+.mentors-heading {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.mentors-heading h1 {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: fadeInDown 0.5s ease-out;
+}
+
+.mentors-heading p {
+  font-size: 1rem;
+  color: #555;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.mentorsearch {
+  margin-left: 70vw;
+  height: 20px;
+  width: 180px;
+  font-size: 10px;
+  margin-top: 20px;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.mentorsearch:hover {
+  border-color: #1d4ed8; 
+  box-shadow: 0 0 5px rgba(29, 78, 216, 0.4); 
+}
+
+.mentorsearch:focus {
+  outline: none;
+  border-color: #1d4ed8;
+  box-shadow: 0 0 5px rgba(29, 78, 216, 0.6); /* Glow on focus */
+}
