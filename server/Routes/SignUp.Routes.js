@@ -32,7 +32,6 @@ const allowedIitDomains = [
 "@iiti.ac.in",
 "@iitpalakkad.ac.in",
 "@iitdharwad.ac.in",
-"vishnu.edu.in"
 ];
 
 
