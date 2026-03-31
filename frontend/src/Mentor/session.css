@@ -1,0 +1,59 @@
+/* Main container */
+.session-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f7fb;
+  padding: 40px 20px;
+}
+
+/* Inner container */
+.session-min-container {
+  width: 80%;
+  margin: 30px auto;
+  transition: all 0.3s ease;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.session-min-container:hover {
+  transform: translateY(-5px);      /* lift effect */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* deeper shadow */
+  border-color: #4a6cf7;            /* subtle highlight */
+}
+
+/* Heading */
+.session-min-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Card styling */
+.session-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.session-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-color: #4a6cf7;
+}
+
+/* Text styling */
+.session-card p {
+  margin: 6px 0;
+  color: #444;
+}
+
+.session-card strong {
+  color: #222;
+}

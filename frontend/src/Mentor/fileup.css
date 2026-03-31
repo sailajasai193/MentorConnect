@@ -1,0 +1,77 @@
+/* Full page center */
+.fileup-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding:40px;
+}
+
+/* Center content */
+.fileup-min-container {
+  height: 400px;
+  width: 400px;
+  border: 0.5px solid #ddd;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  background: #f5f7ff;
+  border-radius: 16px;              /* rounded corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);  /* soft shadow */
+  transition: all 0.3s ease;        /* smooth animation */
+}
+
+/* 🔥 Hover effect */
+.fileup-min-container:hover {
+  transform: translateY(-5px);      /* lift effect */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* deeper shadow */
+  border-color: #4a6cf7;            /* subtle highlight */
+}
+/* File input styling */
+.fileup-min-container input[type="file"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+/* Button style */
+.fileup-min-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #4a6cf7;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.fileup-min-container button:hover {
+  background: #3b5be0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(74, 108, 247, 0.3);
+}
+
+/* Disabled state */
+.fileup-min-container button:disabled {
+  background: #a5b4fc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Summary box */
+.fileup-min-container div {
+  margin-top: 15px;
+  padding: 15px;
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}

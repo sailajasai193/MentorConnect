@@ -1,0 +1,138 @@
+/* studentDashboard.css */
+
+/* Main container */
+.st-container {
+  min-height: 100vh;
+  background: #f5f7fb; /* light background */
+  font-family: "Segoe UI", sans-serif;
+  padding:40px;
+}
+
+/* Inner container - grid layout for mentor cards */
+.st-min-container {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* always 2 columns */
+  gap: 25px;
+}
+
+/* Responsive tweak for small screens */
+@media (max-width: 768px) {
+  .st-min-container {
+    grid-template-columns: 1fr; /* 1 card per row on tablets & mobile */
+  }
+}
+
+/* Mentor card styling */
+.mentor-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #4a90e2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.mentor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Headings and paragraphs inside card */
+.mentor-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.mentor-card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.mentor-card p strong {
+  color: #222; /* highlight labels */
+}
+
+/* Slots row styling */
+.slots-row {
+  display: flex;
+  justify-content: space-between; /* keeps time left, button right */
+  align-items: center;
+  margin: 8px 0;
+  padding: 8px 12px;
+  background: #f0f5ff;
+  border-radius: 12px;
+  transition: background 0.3s;
+}
+
+.slots-row:hover {
+  background: #e4ecff;
+}
+
+/* Slot time label */
+.slot-time {
+  font-size: 13px;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Book slot button */
+.book-btn-slot {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  transition: all 0.3s;
+  margin-left: 5px;
+}
+
+.book-btn-slot:hover:not(:disabled) {
+  background: linear-gradient(135deg, #357abd, #2c5f9e);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.book-btn-slot:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  color: #777;
+  margin-left: 5px;
+}
+
+/* Availability badge (if needed) */
+.availability {
+  display: inline-block;
+  background: #e8f1ff;
+  color: #357abd;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+/* Responsive tweaks for mobile */
+@media (max-width: 600px) {
+  .st-min-container {
+    padding: 15px;
+  }
+
+  .slots-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px; /* vertical spacing for mobile */
+  }
+
+  .book-btn-slot {
+    width: 100%; /* full width button on mobile */
+    margin-left: 0;
+  }
+}

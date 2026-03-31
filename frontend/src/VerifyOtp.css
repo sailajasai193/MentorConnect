@@ -1,0 +1,62 @@
+.otp-div{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background:#f5f5f5;
+}
+
+/* Heading color */
+.otp-div h2{
+  color: rgb(86, 0, 97);
+  margin-bottom:20px;
+}
+
+.otp-div form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  padding:30px;
+  background:white;
+  border-radius:8px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for card */
+.otp-div form:hover{
+  transform: translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.otp-div input{
+  padding:10px;
+  border-radius:10px;
+  font-size:16px;
+  border:0.5px solid black;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Input focus effect */
+.otp-div input:focus{
+  outline:none;
+  border:1px solid rgb(86, 0, 97);
+  box-shadow:0 0 5px rgba(86,0,97,0.4);
+}
+
+.otp-btn{
+  padding:10px;
+  background:rgb(86, 0, 97);
+  border-radius:10px;
+  color:white;
+  border:none;
+  cursor:pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover */
+.otp-btn:hover{
+  background:rgb(120, 0, 140);
+  transform: scale(1.05);
+}

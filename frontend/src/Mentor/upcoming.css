@@ -1,0 +1,92 @@
+/* Main container */
+.up-container {
+  min-height: 100vh;
+  background: #f5f7fb;
+  font-family: "Segoe UI", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Inner container */
+.up-min-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+  display: grid;
+
+  /* 🔥 3 cards per row */
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  height: auto;
+  align-content: start;
+}
+
+
+.up-min-container:hover {
+  transform: translateY(-5px);      /* lift effect */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* deeper shadow */
+  border-color: #4a6cf7;            /* subtle highlight */
+}
+
+/* Heading full width */
+.up-min-container h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+/* Session card */
+.session-card {
+  background: #fdfdfd;
+  border-radius: 14px;
+  padding: 5px 5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-left: 5px solid #4a90e2;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.session-card p {
+  margin: 2px 0;  
+  font-size: 0.9rem;
+  
+}
+
+
+.up-min-container p {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+/* Footer fix */
+footer {
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .up-min-container {
+    grid-template-columns: repeat(2, 1fr); /* tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  .up-min-container {
+    grid-template-columns: 1fr; /* mobile */
+  }
+}

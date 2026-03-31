@@ -1,0 +1,165 @@
+/* Main container */
+.mentor-container{
+    min-height:100vh;
+    background:#f5f7fb;
+    padding:40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.mentor-header{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+/* Navigation buttons */
+.seller-header-nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+/* Buttons inside dashboard */
+.seller-header-nav button{
+    padding:10px 18px;
+    border:none;
+    border-radius:6px;
+    background:#4a6cf7;
+    color:white;
+    font-size:14px;
+    cursor:pointer;
+    transition:0.2s ease;
+}
+
+.seller-header-nav button:hover{
+    background:#2f4de0;
+    transform:translateY(-1px);
+}
+
+/* Disabled button */
+.seller-header-nav button:disabled{
+    background:#ccc;
+    color:#666;
+    cursor:not-allowed;
+}
+
+/* Right side buttons */
+.mentor-header-right{
+    display:flex;
+    gap:10px;
+}
+
+/* Back and logout buttons */
+.mentor-header-btn{
+    padding:8px 16px;
+    border:none;
+    border-radius:6px;
+    background:#ff5a5f;
+    color:white;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.mentor-header-btn:hover{
+    background:#e0484d;
+}
+
+/* Body */
+.mentor-body{
+  margin-top:30px;
+}
+
+/* Welcome heading */
+.mentor-body h2{
+  margin-bottom:25px;
+}
+
+/* Today's sessions box */
+.mentor-today-sessions{
+  background:white;
+  padding:20px;
+  border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom:30px;
+}
+
+/* Individual session card */
+.session-card{
+  border:1px solid #e0e0e0;
+  padding:14px;
+  margin-top:10px;
+  border-radius:6px;
+  display:flex;
+  justify-content:space-between;
+  background:#fafafa;
+  transition:0.2s;
+}
+
+.session-card:hover{
+  background:#f1f4ff;
+}
+
+/* Statistics section */
+.mentor-totalview{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+/* Stats cards */
+.stat-box{
+  background:white;
+  padding:20px;
+  border-radius:8px;
+  width:200px;
+  text-align:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  transition:0.2s;
+}
+
+.stat-box:hover{
+  transform:translateY(-3px);
+}
+
+.stat-box p{
+  font-size:14px;
+  color:#666;
+  margin-bottom:8px;
+}
+
+.stat-box h3{
+  font-size:22px;
+  color:#333;
+}
+
+/* Responsive design */
+@media(max-width:768px){
+
+    .mentor-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .seller-header-nav{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .mentor-header-right{
+        margin-top:10px;
+    }
+
+    .mentor-totalview{
+        flex-direction:column;
+        align-items:center;
+    }
+
+}

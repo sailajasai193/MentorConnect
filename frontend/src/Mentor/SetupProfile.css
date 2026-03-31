@@ -1,0 +1,110 @@
+.mentor-setup-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #f5f6fa; /* light background for the form */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mentor-setup-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.mentor-setup-container form {
+  display: flex;
+  flex-direction: column;
+  gap:1px;
+}
+
+.mentor-setup-container input,
+.mentor-setup-container textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.mentor-setup-container input:focus,
+.mentor-setup-container textarea:focus {
+  outline: none;
+  border-color: #4a6cf7;
+  box-shadow: 0 0 8px rgba(74, 108, 247, 0.4);
+}
+
+.mentor-setup-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.mentor-setup-container button {
+  background-color: #4a6cf7;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+   margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(74, 108, 247, 0.4);
+}
+
+.mentor-setup-container button:hover {
+  background-color: #3b55d0;
+  box-shadow: 0 8px 20px rgba(74, 108, 247, 0.6);
+  transform: translateY(-2px);
+}
+
+.mentor-setup-container button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(74, 108, 247, 0.5);
+}
+
+/* Placeholder styling */
+.mentor-setup-container input::placeholder,
+.mentor-setup-container textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.mentor-setup-container h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.mentor-setup-container input::placeholder,
+.mentor-setup-container textarea::placeholder {
+  color: #666;          /* darker grey */
+  font-style: normal;    /* not italic */
+  font-size: 14px;       /* smaller text */
+}
+
+.mentor-setup-container input,
+.mentor-setup-container textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.mentor-setup-container input:focus,
+.mentor-setup-container textarea:focus {
+  border-color: #4a6cf7;
+  box-shadow: 0 0 8px rgba(74, 108, 247, 0.4);
+  outline: none;
+}
+/* Responsive */
+@media (max-width: 650px) {
+  .mentor-setup-container {
+    margin: 20px;
+    padding: 20px;
+  }
+}
