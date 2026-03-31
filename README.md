@@ -4,16 +4,30 @@
 
 ---
 
-## 🌟 Key Features
+## 🌟 Features
 
-- **User Authentication:** Secure login/signup for students and mentors using **JWT (JSON Web Tokens)**.  
-- **AI-Powered Assistance:**  
-  - Integration with **LangChain**, **Whisper AI**, and **Groq LLM API** for generating insights and meeting summaries automatically.  
-- **Automatic Session Scheduling:** Students can schedule mentorship sessions, and the system automatically generates **Google Meet links** for each session.  
-- **Email Notifications:** Automatic email reminders for upcoming sessions.  
-- **Secure File Handling:** File uploads (assignments, notes) with **Multer**, safely stored in the server.  
-- **Role-Based Access:** Different views and access for **students** and **mentors**.  
-- **Environment-Based Secrets:** API keys and secrets are stored in `.env` files for maximum security.  
+### 🔐 Authentication
+- Secure login/signup using JWT (JSON Web Tokens)
+- Role-based access for Students and Mentors
+
+### 🤖 AI-Powered Assistance
+- Whisper AI → Transcribes session audio  
+- LangChain + Groq API → Generates summaries and insights automatically  
+
+### 📅 Smart Scheduling
+- Book mentorship sessions easily  
+- Automatic Google Meet link generation    
+
+### 📁 File Handling
+- Upload assignments and notes securely using Multer  
+
+ **Role-Based Access:** Different views and access for **students** and **mentors**.  
+ 
+### 🔒 Security
+- Environment variables (.env) for storing sensitive data  
+- Protected API routes  
+
+
 
 ---
 
@@ -91,3 +105,15 @@ npm start
 Frontend:
 cd ../frontend
 npm start
+
+```
+
+
+###📖 Usage
+Sign up as a student or mentor
+Log in to your account
+Schedule or join mentorship sessions
+Receive Google Meet links and email reminders
+Access AI-generated session summaries
+Upload assignments and notes securely
+
