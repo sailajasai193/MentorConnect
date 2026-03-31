@@ -51,14 +51,13 @@
 1. **Authentication & Security:**  
    - Users sign up with email and password.  
    - JWT tokens are issued upon login for secure session management.  
-   - Sensitive credentials (Google OAuth, Groq API keys) are stored in `.env`.  
-
+ 
 2. **Mentorship Scheduling:**  
    - Students select a mentor and schedule a session.  
-   - The system automatically generates a **unique Google Meet link** for the session.  
+   - The system automatically generates a **unique Google Meet link** for the session and sent to their emails(Mentor and Student). 
 
 3. **AI-Powered Summaries:**  
-   - Sessions can be recorded, and Whisper AI transcribes audio automatically.  
+   - Sessions can be recorded,and Whisper AI transcribes audio automatically.  
    - LangChain and Groq LLM analyze transcripts and generate **concise summaries** for both students and mentors.  
 
 4. **Email & Notifications:**  
@@ -113,6 +112,5 @@ npm start
 - Sign up as a **student** or **mentor**
 - Log in to your account
 - Schedule or join mentorship sessions
-- Receive **Google Meet links** and **email reminders**
+- Receive **Google Meet links** 
 - Access AI-generated **session summaries**
-- Upload assignments and notes securely
