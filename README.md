@@ -109,11 +109,10 @@ npm start
 ```
 
 
-###📖 Usage
--Sign up as a student or mentor
--Log in to your account
--Schedule or join mentorship sessions
--Receive Google Meet links and email reminders
--Access AI-generated session summaries
--Upload assignments and notes securely
-
+### 📖 Usage
+- Sign up as a **student** or **mentor**
+- Log in to your account
+- Schedule or join mentorship sessions
+- Receive **Google Meet links** and **email reminders**
+- Access AI-generated **session summaries**
+- Upload assignments and notes securely
