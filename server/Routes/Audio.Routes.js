@@ -16,15 +16,15 @@ const upload = multer({ dest: 'uploads/' });
 
 router.post('/upload', authMiddleware, upload.single('audio'), async (req, res) => {
   try {
-    const filePath = req.file.path;
+    const filePath=req.file.path;
 
-    const mentorId = req.user.id;
-    const mentorEmail = req.user.email;
+    const mentorId=req.user.id;
+    const mentorEmail=req.user.email;
 
-    console.log("Logged-in user:", req.user);
-    console.log("Mentor email:", mentorEmail);
+    console.log("Logged-in user:",req.user);
+    console.log("Mentor email:",mentorEmail);
 
-    const studentEmail = req.body.email;   // keep your same field
+    const studentEmail=req.body.email;   
     console.log("student email:", studentEmail);
 
     
@@ -63,9 +63,9 @@ router.post('/upload', authMiddleware, upload.single('audio'), async (req, res) 
         const now = new Date();
       const mentorId = req.user.userId;
 
-console.log("mentorId:", mentorId);
-console.log("studentId:", student._id);
-      const selectedSession = await Session.findOne({
+      console.log("mentorId:", mentorId);
+      console.log("studentId:", student._id);
+  const selectedSession = await Session.findOne({
   mentor: mentorId,
   student: student._id,
   status: { $regex: /^completed$/i }
@@ -73,7 +73,6 @@ console.log("studentId:", student._id);
 
   
 
-   
 
         if (!selectedSession) {
           console.error("No completed session found");

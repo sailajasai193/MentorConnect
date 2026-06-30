@@ -36,8 +36,7 @@ function StSession() {
       sessions.map((session) => (
         <div key={session._id} className="session-card">
 
-          <p><strong>Student Name:</strong> {session.studentName}</p>
-          <p><strong>Student Email:</strong> {session.studentEmail}</p>
+          
           <p><strong>Date:</strong> {new Date(session.date).toLocaleDateString("en-GB")}</p>
           <p><strong>Summary:</strong> {session.summary}</p>
 

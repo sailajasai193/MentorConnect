@@ -18,4 +18,8 @@ const url = oauth2Client.generateAuthUrl({
   prompt: "consent" 
 });
 
+// console.log("Current directory:", process.cwd());
+// console.log("Current file:", __dirname);
+
+
 console.log("Visit this URL to get the code:", url);

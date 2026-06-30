@@ -267,28 +267,20 @@ router.delete("/:slotId", authMiddleware, async (req, res) => {
 
 router.get("/completed", authMiddleware, async (req, res) => {
   try {
-    const mentorId = req.user.userId; // ✅ correct field
-
+    const mentorId = req.user.userId; 
     const sessions = await Session.find({ mentor: mentorId }).populate("student");
-
     const now = new Date();
-
     const completedSessions = [];
-
     for (let session of sessions) {
-
       if (!session.date || !session.endTime) continue;
-
-      // ✅ create proper local datetime
       const [endH, endM] = session.endTime.split(":").map(Number);
 
       const sessionEnd = new Date(session.date);
       sessionEnd.setHours(endH, endM, 0, 0);
-
-      // ✅ check if session ended
+     
       if (sessionEnd <= now) {
 
-        // 🔥 auto update status
+        
         if (session.status !== "completed") {
           session.status = "completed";
           await session.save();
@@ -315,14 +307,14 @@ router.get("/completed", authMiddleware, async (req, res) => {
 
 router.get("/history", authMiddleware, async (req, res) => {
   try {
-    const mentorId = req.user.userId;   // 🔥 logged-in mentor
+    const mentorId = req.user.userId;  
 
     console.log("Mentor ID:", mentorId);
 
     const notes = await MeetingNotes.find({
       mentorId: mentorId
     })
-      .populate("studentId", "name email")   // 🔥 student details
+      .populate("studentId", "name email")  
       .sort({ meetingDate: -1 });
 
     if (!notes || notes.length === 0) {
@@ -331,7 +323,7 @@ router.get("/history", authMiddleware, async (req, res) => {
       });
     }
      console.log("First note studentId:", notes[0]?.studentId);
-    // ✅ Format response for frontend
+    
     const formatted = notes.map((note) => ({
       _id: note._id,
       studentName: note.studentId?.name,

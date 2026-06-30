@@ -1,0 +1,1 @@
+When an error is occuring just run node getToken.js.it will give a link redirect to that link(use personal mails) and copy paste refresh toekn in .env file

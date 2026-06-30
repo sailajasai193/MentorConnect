@@ -15,16 +15,16 @@ router.get("/st/upcoming", authMiddleware, async (req, res) => {
 
     const todayStr = new Date().toLocaleDateString("en-CA"); // YYYY-MM-DD
 
-    // 👉 Fetch today's + future sessions
+    // Fetch today's + future sessions
     const sessions = await Session.find({
-      student: req.user.userId, // ✅ FIXED
+      student: req.user.userId, 
       status: "upcoming",
       date: { $gte: todayStr }
     })
       .populate("mentor", "name email")
       .lean();
 
-    // 👉 Filter out past time slots (today only)
+    //  Filter out past time slots (today only)
     const filteredSessions = sessions.filter((s) => {
       if (!s.startTime || !s.endTime) return false;
 

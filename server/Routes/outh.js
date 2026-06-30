@@ -11,7 +11,7 @@ const oauth2Client = new google.auth.OAuth2(
 
 router.get("/oauth2callback", async (req, res) => {
   try {
-    const code = req.query.code; // this is the code Google sends
+    const code = req.query.code;
 
     if (!code) return res.send("No code received from Google.");
 

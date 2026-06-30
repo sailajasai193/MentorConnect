@@ -8,11 +8,11 @@ router.get("/session", authMiddleware, async (req, res) => {
   try {
     const mentorId = req.user.userId;
 
-    const todayStr = new Date().toLocaleDateString("en-CA"); // YYYY-MM-DD
+    const todayStr = new Date().toLocaleDateString("en-CA"); 
 
     const sessions = await Session.find({
       mentor: mentorId,
-      date: todayStr,     // ✅ exact match
+      date: todayStr,     
       status: "upcoming"
     })
     .populate("student", "name email")

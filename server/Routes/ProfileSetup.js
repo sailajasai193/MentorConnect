@@ -10,7 +10,7 @@ router.post("/profile", authMiddleware, async (req, res) => {
       headline,
       college,
       skills,
-      languagesKnown, // from frontend
+      languagesKnown, 
       about,
       linkedin,
       pricePerSession

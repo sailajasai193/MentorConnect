@@ -10,12 +10,12 @@ groq_api_key = os.environ.get("GROQ_API_KEY")
 
 file_path = sys.argv[1]  # received from Node.js
 
-# 1️⃣ Transcribe audio using Whisper
+# Transcribe audio using Whisper
 model = whisper.load_model("base")  # or tiny/medium/large
 result = model.transcribe(file_path)
 speech_text = result['text']
 
-# 2️⃣ Summarize with LLaMA
+# 2️Summarize with LLaMA
 llm = ChatGroq(
     model="llama-3.1-8b-instant",
     api_key=groq_api_key, 
